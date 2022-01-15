@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<HTML>
+    <Head>
+        <meta charset = "utf-8">
+        <title>ParkJeongHwan</title>
+        <link href="../css/layout.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="./masonry/masonry.pkgd.min.js"></script>
+        <!-- 본문 자주가는 사이트 설정 -->
+        <style>
+            #menu_lnb > ul {overflow : hidden;}
+            #menu_lnb > ul > li {float : left;}
+            #menu_lnb > ul > li > a {
+                display : block;
+                padding : 10px 20px;
+                margin : 0 auto;
+            }
+            #menu_lnb > ul > li:first-child > a {border-radius : 10px 0 0 10px;}
+            #menu_lnb > ul > li:last-child > a {border-radius:0 10px 10px 0;}
+            #menu_lnb > ul > li > a > h3 {
+                text-align : center;
+            }
+        </style>
+        <!-- 드롭다운 메뉴 -->
+        <script>
+                $(document).ready(function() {
+                    $('.topmenu').hover(function() {
+                        $(this).find('.submenu').show();
+                    }, function() {
+                        $(this).find('.submenu').hide();
+                    });
+                });
+        </script>
+        <!-- Masonry 활용 -->
+        <style>
+            #picture_section {
+                width : 920px;
+                margin : 0 auto;
+            }
+
+            @media (max-width : 919px) {
+                #picture_section {width : 690px;}
+            }
+
+            @media (min-width : 930px) and (max-width: 1149px) {
+                #picture_section {width : 920px;}
+            }
+            @media (min-width : 1150px) and (max-width : 1379px) {
+                #picture_section {width : 1380px;}
+            }
+            .paper {
+                font-size : 15px;
+                float: left;
+                width : 190px;
+                background-color : white;
+                margin-top : 10px;
+                margin-right : 10px;
+                padding : 15px 15px 0;
+                box-shadow : 0 1px 3px rgba(34, 25, 25, 0.4);
+                border-radius : 10px;
+            }
+            .normal { width : 190px; height : 270px;}
+            .big {width : 190px; height : 420px;}
+            
+            .paper_content {
+                margin : 0 -15px;
+                margin-top : 10px;
+                padding : 10px 15px;
+                border-radius : 10px;
+                background : #F2F0F0; 
+                overflow : hidden;
+            }
+
+            .paper_description {
+                margin : 10px 0;
+            }
+            .paper_link {
+                display : block;
+                float : left;
+            }
+            .paper_text {
+                float : left;
+                width : 150px;
+                margin-left : 10px;
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $('#masonry_container').imagesLoaded(function() {
+                    $('#masonry_container').masonry({
+                        itemSelector: '.paper',
+                        columnWidth:230,
+                        isAnimated : true
+                    });
+                });
+            });
+        </script>
+        <!-- 라이트 박스 활용 -->
+        <style>
+        #darken_background {
+            position : absolute;
+            top: 0; left : 0; right : 0;
+            height : 100%;
+            display : none;
+            background : rgba(0, 0, 0, 0.9);
+            z-index : 10000;
+            overflow-y : scroll;
+        }
+        #lightbox {
+            width : 1200px;
+            margin : 20px auto; padding : 15px;
+            border : 1px solid #333333;
+            border-radius : 5px;
+            background : white;
+            box-shadow : 0 5px 5px rgba(34, 25, 25, 0.4);
+            text-align : center;
+            font-family : 'Jua', sans-serif;
+        }
+
+        .user_information {overflow : hidden; text-align : left;}
+        .user_information_text{float : left; width : 620px;}
+        .lightbox_splitter {margin : 10px 0;}
+        </style>
+        <script>
+            $(document).ready(function () {
+                function showLightBox() {
+                    $('#darken_background').show();
+                    $('#darken_background').css('top',$(window).scrollTop());
+                    $('body').css('overflow', 'hidden');
+                }
+
+                function hideLightBox() {
+                    $('#darken_background').hide();
+                    $('body').css('overflow', '');
+                }
+                $('#darken_background').click(function () {
+                    hideLightBox();
+                });
+                $('.paper').click(function () {
+                    showLightBox();
+                });
+
+                $('#lightbox').click(function (event) {
+                    event.stopPropagation()
+                });
+            });
+        </script>
+    </Head>
+    <body>
+        <header id="main_header">
+            <h1 class="logo">
+                <a href = "./index.html"><img src = "../image/character.jpg"/></a>
+            </h1>
+            <div id = "title">
+                <h1>ParkJeongHwan</h1>
+                <h3>My Private Site</h3>
+            </div>
+            <nav id = "main_gnb">
+                <li><a href = "./index.html"><h1>Home</h1></a></li>
+            </nav>
+            <nav id ="main_lnb">
+                <h3>현재시간<br>
+                <div id ="digitalClock"></div>
+                <!-- 시계 -->
+                <script>
+                    function digitalClock() {
+                        var today = new Date();
+                        var day= today.getMonth() + 1 + "월" + today.getDate() + "일";
+                        var time = today.getHours() + "시" + today.getMinutes() + "분" + today.getSeconds() + "초";
+                        document.getElementById("digitalClock").innerHTML = day + time;
+                        setTimeout('digitalClock()', 10);
+                    }
+                    digitalClock();
+                </script>
+                </h3>
+            </nav>
+            <nav id ="change_btn">
+                <img id="myImage" src = "../image/bulb_off.png" style="width : 100px; height : 100px;" onclick="changeColor();">
+                <!-- 배경색 변경 -->
+                <script>
+                    var colors = ["rgba(212, 244, 250, 0.6)", "rgb(75, 75, 75)"];
+                    var colorindex = 0;
+                    function changeColor() {
+                        if(colorindex >= colors.length) {
+                            colorindex = 0;
+                        }
+                        if(colorindex == 1) {
+                            document.getElementById('myImage').src=("../image/bulb_off.png");
+                        }
+                        else if (colorindex == 0) {
+                            document.getElementById('myImage').src=("../image/bulb_on.png");
+                        }
+                        document.body.style.backgroundColor = colors[colorindex];
+                        colorindex++;
+                    }
+                </script>
+            </nav>
+        </header>
+        <div id = "wrap">
+            <nav id = "content_lnb">
+                <ul>
+                    <li><a href = "./introduce.html">자기소개</a></li>
+                    <li><a href = "./schedule.html">주요일정</a></li>
+                    <li><a href = "./routine.html">일상</a></li>
+                    <li><a href = "./picture.html">사진</a></li>
+                </ul>
+                <ul class = "topmenu">
+                    <li><a href="#">SoftwareProgramming</a></li>
+                    <ul class ="submenu">
+                        <li><a href="./web_programming_page.html">Web_Programming</a></li>
+                        <li><a href="./Cpp_programming_page.html">C++</a></li>
+                        <li><a href="./linux_programming_page.html">Linux</a></li>
+                        <li><a href="./data_structures_page.html">자료구조</a></li>
+                        <li><a href="./system_software_page.html">시스템 소프트웨어</a></li>
+                    </ul>
+                </ul>
+            </nav>
+            <div id = "content_wrap">
+                <div id = "content">
+                    <h1>일상</h1>
+                    <div id="masonry_container">
+                        <div class="paper normal">
+                            <div class="paper-holder">
+                                <a><img width="190" src="../image/routine_01.jpg"></a>
+                            </div>
+                            <p class="paper_description">조별과제</p>
+                            <div class="paper_content">
+                                <p class="paper_text">드디어 완성!</p>
+                            </div>
+                        </div>
+                        <div class="paper big">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/routine_02.png"></a>
+                                </div>
+                                <p class="paper_description">돈이 생겼다!</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">50만원... 아껴 쓰자!</p>
+                                </div>
+                        </div>
+                        <div class="paper normal">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/routine_03.jpg"></a>
+                                </div>
+                                <p class="paper_description">돈 생긴 기념으로...</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">이것만 먹고 아껴쓰자!!</p>
+                                </div>
+                        </div>
+                        <div class="paper normal">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/routine_04.jpg"></a>
+                                </div>
+                                <p class="paper_description">중간고사 끝</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">드디어 중간고사가 끝났다!!</p>
+                                </div>
+                        </div>
+                        <div class="paper normal">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/routine_05.jpg"></a>
+                                </div>
+                                <p class="paper_description">화장실 대박</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">화장실 대박 겁나 큼!</p>
+                                </div>
+                        </div>
+                        <div class="paper normal">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/routine_06.jpg"></a>
+                                </div>
+                                <p class="paper_description">고양이 귀엽다 ㅠㅠ</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">요즘 고양이 생각이 가득하다!</p>
+                                </div>
+                        </div>
+                        <div class="paper big">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/routine_07.png"></a>
+                                </div>
+                                <p class="paper_description">불합격 ㅜ...</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">군대 언제가지... 주변 친구들은 다 갔는데...</p>
+                                </div>
+                        </div>
+                        <div class="paper big">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/routine_08.jpg"></a>
+                                </div>
+                                <p class="paper_description">오랜만에 쇼핑</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">기분 전환 겸 너무 더워서 오랜만에 옷 샀다!</p>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div id="darken_background">
+            <div id="lightbox">
+                <div class="user_information">
+                    <div class="user_information_text">
+                        <h3>공학설계 팀프로젝트!</h3>
+                        <p>개강 하고부터 매주 다같이 모여서 진행했던 팀 프로젝트! 다행히 생각한대로 잘 만들었다. 조장으로서 힘든점도 많았지만 다들 잘 해주어서 매우매우 고마웠다. A+을 향해 마지막 발표까지 화이팅!</p>
+                    </div>
+                </div>
+                <a class="lightbox_splitter"><img src="../image/routine_01.jpg"></a>
+            </div>
+            <div id="lightbox">
+                    <div class="user_information">
+                        <div class="user_information_text">
+                            <h3>갑자기 큰돈이 생겼다.!</h3>
+                            <p>TOEIC점수로 환급 받아 50만원이 생겼다!!! 기말고사 끝날 때 까지 아껴써야지... 기말고사 끝나고 여행이나 다녀와야겠다.</p>
+                        </div>
+                    </div>
+                    <a class="lightbox_splitter"><img src="../image/routine_02.png"></a>
+            </div>
+            <div id="lightbox">
+                <div class="user_information">
+                    <div class="user_information_text">
+                        <h3>초밥이 너무나도 먹고 싶다.!</h3>
+                        <p>초밥이 너무나도 먹고 싶다... 돈 받은지 얼마 되지도 않았는데...  오랜만에 먹는 초밥 매우 맛있다. Delicious!</p>
+                        <p>cf) 참치는 너무나도 비쌌다... 기말고사 끝나고 여행가는 건 포기해야 하나 싶다..</p>
+                    </div>
+                </div>
+                <a class="lightbox_splitter"><img src="../image/routine_03.jpg"></a>
+            </div>
+            <div id="lightbox">
+                <div class="user_information">
+                    <div class="user_information_text">
+                        <h3>축제기간!!!</h3>
+                        <p>드디어 중간고사가 끝나고 기다리던 축제 기간이다.!!! 중간고사로 피로에 찌들어 있었는데... 이제 아무걱정 없이 놀자 :D</p>
+                    </div>
+                </div>
+                <a class="lightbox_splitter"><img src="../image/routine_04.jpg"></a>
+            </div>
+            <div id="lightbox">
+                <div class="user_information">
+                    <div class="user_information_text">
+                        <h3>화장실 엄청 크다...</h3>
+                        <p>ㅋㅋㅋㅋㅋ 살면서 이렇게 웅장한 화장실은 처음 보는 듯... 너무 신기하고 멋있어서 한 컷!</p>
+                    </div>
+                </div>
+                <a class="light_splitter"><img src="../image/routine_05.jpg"></a>
+            </div>
+            <div id="lightbox">
+                <div class="user_information">
+                    <div class="user_information_text">
+                        <h3>귀여운 고양이</h3>
+                        <p>친구네 집에 놀러가서 고양이 보고 왔더니 고양이 생각이 가득하다. 그래서 찾아본 고양이! 매우 귀엽다.. 나도 고양이 키우고 싶다...</p>
+                    </div>
+                </div>
+                <a class="light_splitter"><img src="../image/routine_06.jpg"></a>
+            </div>
+            <div id="lightbox">
+                <div class="user_information">
+                    <div class="user_information_text">
+                        <h3>어학병 2차 면접 불합격...</h3>
+                        <p>어학병 2차 면접 결과가 나왔다. 면접 볼 때 망했다... 라는 느낌이 들었는다. 역시나 망했다. 군대 언제가야할지 걱정이 앞선다...</p>
+                    </div>
+                </div>
+                <a class="light_splitter"><img src="../image/routine_07.png"></a>
+            </div>
+            <div id="lightbox">
+                <div class="user_information">
+                    <div class="user_information_text">
+                        <h3>기분전환 겸 오랜만에 쇼핑</h3>
+                        <p>2차 면접 결과 나오고 기분전환도 하고 날씨도 더워져서 오랜만에 쇼핑갔다왔다. 여름 옷 중에 흰색이 없어서 흰색 반팔티로 사봤는데 나름 이쁜듯</p>
+                    </div>
+                </div>
+                <a class="light_splitter"><img src="../image/routine_08.jpg"></a>
+            </div>
+        </div>
+        <footer id="main_footer">
+            <h3>2017203073 박정환</h3>
+            <p>☆Copyright by pjh. all right reserved☆</p>
+        </footer>
+    </body>
+</HTML>

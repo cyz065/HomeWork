@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Bitter|Jua');
+/* 전체 초기화 */
+* {margin :0; padding :0;}
+body {
+    font-family: 'Bitter', serif;
+    background-color : rgba(212, 244, 250, 0.6);
+}
+li {list-style : none;}
+a {text-decoration : none;}
+img {border : 0;}
+
+/* 헤더 */
+#main_header {
+        width : 960px; margin :0 auto;
+        height : 160px;
+        position : relative;
+}
+#main_header > h1.logo {
+    position : absolute;
+    left : 260px; top : 30px;
+}
+#main_header > #title {
+    position : absolute;
+    left :370px; top : 55px;
+}
+#main_header > #main_gnb {
+    position : absolute;
+    right : 0; top: 10px;
+}
+#main_header > #main_lnb {
+    position : absolute;
+    right : 0px;
+    bottom : 10px;
+    font-family : 'Jua', sans-serif;
+    text-align : center;
+}
+#main_header > #change_btn {
+    position : absolute;
+    left : 0px;
+    top : 40px;
+}
+/* 메뉴 목록 및 본문*/
+.submenu {
+    margin : 10px;
+    font-size:12pt;
+    font-family : 'Jua', sans-serif;
+    height : 40px; line-height : 40px;
+    padding-left : 15px;
+    font-weight : bold;
+}
+#wrap {
+    overflow : hidden;
+    background : #71B1D1;
+}
+#wrap > #content_lnb {
+    float : left;
+    width : 200px;
+}
+#content_lnb > ul > li > a {
+    display : block;
+    height : 40px; line-height : 40px;
+    padding-left : 15px;
+    border-top : 1px solid #96D6F6;
+    border-bottom : 1px solid #6298B2;
+    color : black;
+    font-weight : bold; font-family : 'Jua', sans-serif;
+}
+#content_lnb > ul > li > a:hover {
+    color : white;
+}
+#content_lnb > ul > li {
+    display : block;
+    height : 40px; line-height : 40px;
+    padding-left : 15px;
+    border-top : 1px solid #96D6F6;
+    border-bottom : 1px solid #6298B2;
+    color : black;
+    font-weight : bold; font-family : 'Jua', sans-serif;
+}
+#wrap > #content_wrap {
+    float : left;
+    width : 100%;
+    margin-right : -200px;
+}
+#wrap > #content_wrap > #content {padding-right : 200px;}
+#content {
+    background : rgba(212, 244, 250, 0.6);
+    border-left : 1px solid black;
+    padding : 20px;
+    font-family : 'Jua', sans-serif;
+    overflow:hidden;
+}
+article {
+    padding : 10px;
+    font-family : 'Jua', sans-serif;
+}
+
+/* footer */
+#main_footer {
+    padding : 10px;
+    border-top: 1px solid black;
+    text-align : center;
+    font-family : 'Jua', sans-serif;
+}

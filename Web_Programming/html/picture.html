@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<HTML>
+    <Head>
+        <meta charset = "utf-8">
+        <title>ParkJeongHwan</title>
+        <link href="../css/layout.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/colorbox.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="./masonry/masonry.pkgd.min.js"></script>
+        <script src = "jquery.colorbox.js"></script>
+        <!-- 본문 자주가는 사이트 설정 -->
+        <style>
+            #menu_lnb > ul {overflow : hidden;}
+            #menu_lnb > ul > li {float : left;}
+            #menu_lnb > ul > li > a {
+                display : block;
+                padding : 10px 20px;
+                margin : 0 auto;
+            }
+            #menu_lnb > ul > li:first-child > a {border-radius : 10px 0 0 10px;}
+            #menu_lnb > ul > li:last-child > a {border-radius:0 10px 10px 0;}
+            #menu_lnb > ul > li > a > h3 {
+                text-align : center;
+            }
+        </style>
+        <!-- 드롭다운 메뉴 -->
+        <script>
+                $(document).ready(function() {
+                    $('.topmenu').hover(function() {
+                        $(this).find('.submenu').show();
+                    }, function() {
+                        $(this).find('.submenu').hide();
+                    });
+                });
+        </script>
+        <!-- Masonry 활용 -->
+        <style>
+            #picture_section {
+                width : 920px;
+                margin : 0 auto;
+            }
+
+            @media (max-width : 919px) {
+                #picture_section {width : 690px;}
+            }
+
+            @media (min-width : 930px) and (max-width: 1149px) {
+                #picture_section {width : 920px;}
+            }
+            @media (min-width : 1150px) and (max-width : 1379px) {
+                #picture_section {width : 1380px;}
+            }
+            .paper {
+                font-size : 15px;
+                float: left;
+                width : 190px;
+                background-color : white;
+                margin-top : 10px;
+                margin-right : 10px;
+                padding : 15px 15px 0;
+                box-shadow : 0 1px 3px rgba(34, 25, 25, 0.4);
+                border-radius : 10px;
+            }
+            .normal { width : 190px; height : 230px;}
+            .big {width : 190px; height : 370px;}
+            .paper_content {
+                margin : 0 -15px;
+                margin-top : 10px;
+                padding : 10px 15px;
+                border-radius : 10px;
+                background : #F2F0F0; 
+                overflow : hidden;
+            }
+
+            .paper_description {
+                margin : 10px 0;
+            }
+            .paper_link {
+                display : block;
+                float : left;
+            }
+            .paper_text {
+                float : left;
+                width : 150px;
+                margin-left : 10px;
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $('#masonry_container').imagesLoaded(function() {
+                    $('#masonry_container').masonry({
+                        itemSelector: '.paper',
+                        columnWidth:230,
+                        isAnimated : true
+                    });
+                });
+            });
+        </script>
+        <!-- 라이트 박스 활용 -->
+        <style>
+            #darken_background {
+                position : absolute;
+                top: 0; left : 0; right : 0;
+                height : 100%;
+                display : none;
+                background : rgba(0, 0, 0, 0.9);
+                z-index : 10000;
+                overflow-y : scroll;
+            }
+            #lightbox {
+                width : 1200px;
+                margin : 20px auto; padding : 15px;
+                border : 1px solid #333333;
+                border-radius : 5px;
+                background : white;
+                box-shadow : 0 5px 5px rgba(34, 25, 25, 0.4);
+                text-align : center;
+                font-family : 'Jua', sans-serif;
+            }
+        
+            .user_information {overflow : hidden; text-align : left;}
+            .user_information_text{float : left; width : 620px;}
+            .lightbox_splitter {margin : 10px 0;}
+            </style>
+            <script>
+                $(document).ready(function () {
+                    function showLightBox() {
+                        $('#darken_background').show();
+                        $('#darken_background').css('top',$(window).scrollTop());
+                        $('body').css('overflow', 'hidden');
+                    }
+        
+                    function hideLightBox() {
+                        $('#darken_background').hide();
+                        $('body').css('overflow', '');
+                    }
+                    $('#darken_background').click(function () {
+                        hideLightBox();
+                    });
+                    $('.paper').click(function () {
+                        showLightBox();
+                    });
+        
+                    $('#lightbox').click(function (event) {
+                        event.stopPropagation()
+                    });
+                });
+            </script>
+    </Head>
+    <body>
+        <header id="main_header">
+            <h1 class="logo">
+                <a href = "./index.html"><img src = "../image/character.jpg"/></a>
+            </h1>
+            <div id = "title">
+                <h1>ParkJeongHwan</h1>
+                <h3>My Private Site</h3>
+            </div>
+            <nav id = "main_gnb">
+                <li><a href = "./index.html"><h1>Home</h1></a></li>
+            </nav>
+            <nav id ="main_lnb">
+                <h3>현재시간<br>
+                <div id ="digitalClock"></div>
+                <!-- 시계 -->
+                <script>
+                    function digitalClock() {
+                        var today = new Date();
+                        var day= today.getMonth() + 1 + "월" + today.getDate() + "일";
+                        var time = today.getHours() + "시" + today.getMinutes() + "분" + today.getSeconds() + "초";
+                        document.getElementById("digitalClock").innerHTML = day + time;
+                        setTimeout('digitalClock()', 10);
+                    }
+                    digitalClock();
+                </script>
+                </h3>
+            </nav>
+            <nav id ="change_btn">
+                <img id="myImage" src = "../image/bulb_off.png" style="width : 100px; height : 100px;" onclick="changeColor();">
+                <!-- 배경색 변경 -->
+                <script>
+                    var colors = ["rgba(212, 244, 250, 0.6)", "rgb(75, 75, 75)"];
+                    var colorindex = 0;
+                    function changeColor() {
+                        if(colorindex >= colors.length) {
+                            colorindex = 0;
+                        }
+                        if(colorindex == 1) {
+                            document.getElementById('myImage').src=("../image/bulb_off.png");
+                        }
+                        else if (colorindex == 0) {
+                            document.getElementById('myImage').src=("../image/bulb_on.png");
+                        }
+                        document.body.style.backgroundColor = colors[colorindex];
+                        colorindex++;
+                    }
+                </script>
+            </nav>
+        </header>
+        <div id = "wrap">
+            <nav id = "content_lnb">
+                <ul>
+                    <li><a href = "./introduce.html">자기소개</a></li>
+                    <li><a href = "./schedule.html">주요일정</a></li>
+                    <li><a href = "./routine.html">일상</a></li>
+                    <li><a href = "./picture.html">사진</a></li>
+                </ul>
+                <ul class = "topmenu">
+                    <li><a href="#">SoftwareProgramming</a></li>
+                    <ul class ="submenu">
+                        <li><a href="./web_programming_page.html">Web_Programming</a></li>
+                        <li><a href="./Cpp_programming_page.html">C++</a></li>
+                        <li><a href="./linux_programming_page.html">Linux</a></li>
+                        <li><a href="./data_structures_page.html">자료구조</a></li>
+                        <li><a href="./system_software_page.html">시스템 소프트웨어</a></li>
+                    </ul>
+                </ul>
+            </nav>
+            <div id = "content_wrap">
+                <div id = "content">
+                    <h1>사진</h1>
+                    <div id="masonry_container">
+                        <div class="paper normal">
+                            <div class="paper-holder">
+                                <a><img width="190" src="../image/Japan_00.jpg"></a>
+                            </div>
+                            <p class="paper_description">도쿄 여행</p>
+                            <div class="paper_content">
+                                <p class="paper_text">4박 5일 출발!</p>
+                            </div>
+                        </div>
+                        <div class="paper normal">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/Japan_01.jpg"></a>
+                                </div>
+                                <p class="paper_description">도쿄에서 첫 점심</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">첫끼로 규카츠.. Good!</p>
+                                </div>
+                        </div>
+                        <div class="paper big">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/Japan_02.jpg"></a>
+                                </div>
+                                <p class="paper_description">점심 먹고 신기해서 산 코카콜라 복숭아 맛!</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">복숭아에 콜라 섞은 맛... 나름 Good!</p>
+                                </div>
+                        </div>
+                        <div class="paper big">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/Japan_03.jpg"></a>
+                                </div>
+                                <p class="paper_description">도쿄 아사쿠사</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">평일임에도 불구하고 사람이 정말 많다! 우리나라 전주 한옥마을 같은 느낌!</p>
+                                </div>
+                        </div>
+                        <div class="paper big">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/Japan_04.jpg"></a>
+                                </div>
+                                <p class="paper_description">올해의 운세는?</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">올해 운세를 한번 뽑아봄! 한자로 쓰여 있어 알아볼 수 없었다...</p>
+                                </div>
+                        </div>
+                        <div class="paper normal">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/Japan_05.jpg"></a>
+                                </div>
+                                <p class="paper_description">저녁</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">텐동을 먹어보았다! Good!</p>
+                                </div>
+                        </div>
+                        <div class="paper big">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/Japan_06.jpg"></a>
+                                </div>
+                                <p class="paper_description">저녁 관광</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">도쿄 오다이바 명물 건담!! 실제는 매우 크다.</p>
+                                </div>
+                        </div>
+                        <div class="paper normal">
+                                <div class="paper-holder">
+                                    <a><img width="190" src="../image/Japan_07.jpg"></a>
+                                </div>
+                                <p class="paper_description">숙소 앞 맛집을 찾았다.</p>
+                                <div class="paper_content">
+                                    <p class="paper_text">숙소 앞에서 츠케멘 맛집을 찾았다. Good!</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="darken_background">
+                <div id="lightbox">
+                    <div class="user_information">
+                        <div class="user_information_text">
+                            <h3>첫 도쿄 여행!!</h3>
+                            <p>3박 4일 일정으로 도쿄여행을 가게 되었다. 처음 가는 도쿄여행이라 전날부터 설레서 잠을 못잤다... 비행기 타기전에 한컷!</p>
+                        </div>
+                    </div>
+                    <a class="lightbox_splitter"><img src="../image/Japan_00.jpg"></a>
+                </div>
+                <div id="lightbox">
+                        <div class="user_information">
+                            <div class="user_information_text">
+                                <h3>도착 후 먹는 첫 점심h3>
+                                <p>도쿄역에 도착하니 점심 먹을 때가 되었다. 뭐 먹을까 돌아다니던 도중 규카츠집이 있었다! 그래서 규카츠를 먹으러 갔다. 처음 먹어본 규카츠 치고는 매우 맛있었지만,
+                                    많이 먹다보니 느끼했다. 왜 주변 사람들이 조금만 먹는지 깨달았다. 그래도 맛있었다!! 한국오면 또 먹고 싶다.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="lightbox_splitter"><img src="../image/Japan_01.jpg"></a>
+                </div>
+                <div id="lightbox">
+                    <div class="user_information">
+                        <div class="user_information_text">
+                            <h3>한국에는 없는 코카콜라 복숭아 맛</h3>
+                            <p>점심을 먹고 근처 Lawson편의점에 갔다. 역시나 일본답게 다양한게 있었다. 그 중 내 눈에 코카콜라 복숭아 맛이 띄었다. 너무나도 궁금해서 구매! 맛은 그냥 코카콜라에
+                                복숭아 아이스티 섞은 맛이었다. 그래도 맛은 Good!
+                            </p>
+                        </div>
+                    </div>
+                    <a class="lightbox_splitter"><img src="../image/Japan_02.jpg"></a>
+                </div>
+                <div id="lightbox">
+                    <div class="user_information">
+                        <div class="user_information_text">
+                            <h3>도쿄 아사쿠사</h3>
+                            <p>정문 부터 평일임에도 엄청 많았다. 괜히 도쿄 유명 관광지가 아닌 듯 하다. 이리저리 둘러보니 느낌은 우리나라 전주 한옥마을 느낌이었다. 주변에 기모노를 입고 있는
+                                외국인도 정말 많았다.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="lightbox_splitter"><img src="../image/Japan_03.jpg"></a>
+                </div>
+                <div id="lightbox">
+                    <div class="user_information">
+                        <div class="user_information_text">
+                            <h3>궁금해서 뽑아본 올해의 운세</h3>
+                            <p>아사쿠사 근처 사원 주변에 올해의 운세를 뽑는 곳이 있었다. 나름 TV에도 나오고 유명한 곳 같았다. 그래서 100엔 으로 한번 운세를 뽑아보았다. 하지만 한자로 쓰여 있어 무슨
+                                말인지 알 수가 없었다. 부디 나쁜 결과만 아니기를...
+                            </p>
+                        </div>
+                    </div>
+                    <a class="light_splitter"><img src="../image/Japan_04.jpg"></a>
+                </div>
+                <div id="lightbox">
+                    <div class="user_information">
+                        <div class="user_information_text">
+                            <h3>저녁은 텐동으로</h3>
+                            <p>살면서 텐동은 처음 먹어보았다. 값도 저렴하고 맛있었다. 다음에 오면 또 먹어야 겠다.</p>
+                        </div>
+                    </div>
+                    <a class="light_splitter"><img src="../image/Japan_05.jpg"></a>
+                </div>
+                <div id="lightbox">
+                    <div class="user_information">
+                        <div class="user_information_text">
+                            <h3>저녁은 건담과 함께</h3>
+                            <p>저녁을 먹고 도쿄 오다이바의 명물 건담 프라모델을 보러 갔다. 매일 사진으로만 보다가 실물로 보니 매우 컸다. 또 특정 시간이 되면 건담이 움직인다고 해서 기다려 봤는데
+                                너무 큰 기대를 한 것 같다. 그냥 팔과 머리 부분만 조금씩 움직이고 끝났다. 이럴줄 알았으면 일찍 갈걸...
+                            </p>
+                        </div>
+                    </div>
+                    <a class="light_splitter"><img src="../image/Japan_06.jpg"></a>
+                </div>
+                <div id="lightbox">
+                    <div class="user_information">
+                        <div class="user_information_text">
+                            <h3>야식</h3>
+                            <p>숙소에 와서 너무 많이 돌아다녀서 그런지 배고팠다... 숙소 앞에 나와보니 츠케멘 맛집이 있었다. 츠케멘이 뭔가 했는데 츠케멘은 면과 국물이 따로 나오는 라면이라 생각하면 된다.
+                                그래서 국물에 면을 담가서 먹는 건데 처음 먹어보았지만 정말 맛있었다. 내일 아침에도 또 먹을까 진지하게 고민했다.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="light_splitter"><img src="../image/Japan_07.jpg"></a>
+                </div>
+            </div>
+        <footer id="main_footer">
+            <h3>2017203073 박정환</h3>
+            <p>☆Copyright by pjh. all right reserved☆</p>
+        </footer>
+    </body>
+</HTML>

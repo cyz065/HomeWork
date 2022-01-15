@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<HTML>
+    <Head>
+        <meta charset = "utf-8">
+        <title>ParkJeongHwan</title>
+        <link href="../css/layout.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <!-- 본문 자주가는 사이트 설정 -->
+        <style>
+            #menu_lnb > ul {overflow : hidden;}
+            #menu_lnb > ul > li {float : left;}
+            #menu_lnb > ul > li > a {
+                display : block;
+                padding : 10px 20px;
+                margin : 0 auto;
+            }
+            #menu_lnb > ul > li:first-child > a {border-radius : 10px 0 0 10px;}
+            #menu_lnb > ul > li:last-child > a {border-radius:0 10px 10px 0;}
+            #menu_lnb > ul > li > a > h3 {
+                text-align : center;
+            }
+        </style>
+       <!-- 드롭다운 메뉴 -->
+       <script>
+            $(document).ready(function() {
+                $('.topmenu').hover(function() {
+                    $(this).find('.submenu').show();
+                }, function() {
+                    $(this).find('.submenu').hide();
+                });
+            });
+        </script>
+    </Head>
+    <body>
+        <header id="main_header">
+            <h1 class="logo">
+                <a href = "./index.html"><img src = "../image/character.jpg"/></a>
+            </h1>
+            <div id = "title">
+                <h1>ParkJeongHwan</h1>
+                <h3>My Private Site</h3>
+            </div>
+            <nav id = "main_gnb">
+                <li><a href = "./index.html"><h1>Home</h1></a></li>
+            </nav>
+            <nav id ="main_lnb">
+                <h3>현재시간<br>
+                <div id ="digitalClock"></div>
+                <!-- 시계 -->
+                <script>
+                    function digitalClock() {
+                        var today = new Date();
+                        var day= today.getMonth() + 1 + "월" + today.getDate() + "일";
+                        var time = today.getHours() + "시" + today.getMinutes() + "분" + today.getSeconds() + "초";
+                        document.getElementById("digitalClock").innerHTML = day + time;
+                        setTimeout('digitalClock()', 10);
+                    }
+                    digitalClock();
+                </script>
+                </h3>
+            </nav>
+            <nav id ="change_btn">
+                <img id="myImage" src = "../image/bulb_off.png" style="width : 100px; height : 100px;" onclick="changeColor();">
+                <!-- 배경색 변경 -->
+                <script>
+                    var colors = ["rgba(212, 244, 250, 0.6)", "rgb(75, 75, 75)"];
+                    var colorindex = 0;
+                    function changeColor() {
+                        if(colorindex >= colors.length) {
+                            colorindex = 0;
+                        }
+                        if(colorindex == 1) {
+                            document.getElementById('myImage').src=("../image/bulb_off.png");
+                        }
+                        else if (colorindex == 0) {
+                            document.getElementById('myImage').src=("../image/bulb_on.png");
+                        }
+                        document.body.style.backgroundColor = colors[colorindex];
+                        colorindex++;
+                    }
+                </script>
+            </nav>
+        </header>
+        <div id = "wrap">
+            <nav id = "content_lnb">
+                <ul>
+                    <li><a href = "./introduce.html">자기소개</a></li>
+                    <li><a href = "./schedule.html">주요일정</a></li>
+                    <li><a href = "./routine.html">일상</a></li>
+                    <li><a href = "./picture.html">사진</a></li>
+                </ul>
+                <ul class = "topmenu">
+                    <li><a href="#">SoftwareProgramming</a></li>
+                    <ul class ="submenu">
+                        <li><a href="./web_programming_page.html">Web_Programming</a></li>
+                        <li><a href="./Cpp_programming_page.html">C++</a></li>
+                        <li><a href="./linux_programming_page.html">Linux</a></li>
+                        <li><a href="./data_structures_page.html">자료구조</a></li>
+                        <li><a href="./system_software_page.html">시스템 소프트웨어</a></li>
+                    </ul>
+                </ul>
+            </nav>
+            <div id = "content_wrap">
+                <div id = "content">
+                    <h1>WelCome :D</h1>
+                    <article>
+                        <h2>자주가는 사이트 모음</h2>
+                        <nav id = "menu_lnb">
+                            <ul>
+                                <li><a href = "http://google.com" target = _blank;><img src = "../image/google_image.png" width = 100px; height = 100px;><h3>구글</h3></a></li>
+                                <li><a href = "http://naver.com" target = _blank;><img src = "../image/naver_image.png" width = 100px; height = 100px;><h3>네이버</h3></a></li>
+                                <li><a href = "https://info.kw.ac.kr" target = _blank;><img src = "../image/kwu_image.png" width = 100px; height = 100px;><h3>U-Campus</h3></a></li>
+                                <li><a href = "https://www.kebhana.com/" target=_blank;><img src = "../image/hanabank_image.png" width = 100px; height = 100px;><h3>KEB하나은행</h3></a></li>
+                                <li><a href = "https://cs.kw.ac.kr:501/main/main.php" target = _blank;><img src = "../image/kwu_software.png" width = 200px; height = 100px;><h3>소프트웨어 학부</h3></a></li>
+                                <li><a href = "https://www.daum.net/" target=_blank;><img src = "../image/daum.png" width = 200px; height = 100px;><h3>다음</h3></a></li>
+                            </ul>
+                        </nav>
+                        <br>
+                        <nav id = "menu_lnb">
+                            <ul><li><a href = "https://www.instagram.com/" target = _blank;><img src = "../image/instagram_image.png" width = 100px; height = 100px;><h3>인스타그램</h3></a></li>
+                                 <li><a href = "https://www.facebook.com/" target = _blank;><img src = "../image/facebook.png" width = 100px; height = 100px;><h3>페이스북</h3></a></li>
+                                 <li><a href = "https://www.youtube.com/" target = _blank;><img src = "../image/youtube.png" width = 100px; height = 100px;><h3>YouTube</h3></a></li>
+                                <li><a href = "https://www.netflix.com/kr/" target = _blank;><img src = "../image/netflix_image.png" width = 100px; height = 100px;><h3>NetFlix</h3></a></li>
+                                <li><a href = "http://www.clickseo.com/?p=web_programming" target=_blank;><img src = "../image/clickseo_image.png" width = 200px; height = 100px;><h3>ClickSeo</h3></a></li>
+                                <li><a href = "https://www.skyscanner.co.kr/" target=_blank;><img src = "../image/skyscanner_image.png" width = 200px; height = 100px;><h3>SkyScanner</h3></a></li>
+                            </ul>
+                        </nav>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <footer id="main_footer">
+            <h3>2017203073 박정환</h3>
+            <p>☆Copyright by pjh. all right reserved☆</p>
+        </footer>
+    </body>
+</HTML>
