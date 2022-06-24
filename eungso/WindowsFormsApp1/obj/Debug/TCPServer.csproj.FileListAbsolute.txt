@@ -1,0 +1,10 @@
+C:\Users\cyz06\Desktop\eungso\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\cyz06\Desktop\eungso\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\cyz06\Desktop\eungso\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\cyz06\Desktop\eungso\WindowsFormsApp1\obj\Debug\TCPServer.csproj.AssemblyReference.cache
+C:\Users\cyz06\Desktop\eungso\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Server_Form.resources
+C:\Users\cyz06\Desktop\eungso\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\cyz06\Desktop\eungso\WindowsFormsApp1\obj\Debug\TCPServer.csproj.GenerateResource.cache
+C:\Users\cyz06\Desktop\eungso\WindowsFormsApp1\obj\Debug\TCPServer.csproj.CoreCompileInputs.cache
+C:\Users\cyz06\Desktop\eungso\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\cyz06\Desktop\eungso\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

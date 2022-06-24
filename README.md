@@ -1,10 +1,9 @@
 # HomeWork
-안드로이드 과제3
+응용소프트웨어 실습 HW02
 
 <Git Test>
-1. Notification을 통한 Activity 화면 전환
-2. Notification에서 quit시 service종료
-3. Play Activity에서 Play, Pause 버튼 설정
+* 예정
+1. 소켓통신 예외처리
+2. 디렉토리 상세정보 / 다운로드 추가 구현
   
-앞으로 자주 올리도록 하겠습니다.
 
