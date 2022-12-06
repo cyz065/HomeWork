@@ -1,9 +1,4 @@
-# HomeWork
-운영체제
+2022.11.30
 
-<Git Test>
-* 예정
-1. Remove File 구현
-2. 최적화
-  
+BlockChain SmartContract 추가 Trading.sol
 
