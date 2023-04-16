@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-mergeDebugResources-29:\\layout-land\\activity_splash.xml",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\layout-land\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-mergeDebugResources-29:\\layout-land\\activity_classifier.xml",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\layout-land\\activity_classifier.xml"
+    },
+    {
+        "merged": "com.management.capstone.app-mergeDebugResources-29:/layout-land/dialog_layout.xml",
+        "source": "com.management.capstone.app-main-32:/layout-land/dialog_layout.xml"
+    }
+]

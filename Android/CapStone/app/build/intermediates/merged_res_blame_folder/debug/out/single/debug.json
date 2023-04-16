@@ -1,0 +1,154 @@
+[
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_box_border.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\box_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\font_nanum_square.otf.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\font\\nanum_square.otf"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_font_border.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\font_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\font_metropolis.otf.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\font\\metropolis.otf"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\font_title_text.ttf.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\font\\title_text.ttf"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_splash_logo.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\splash_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\layout_activity_classifier.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\layout\\activity_classifier.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable-v24_circular_progress_bar.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable-v24\\circular_progress_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_ic_baseline_videogame_asset_24.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\ic_baseline_videogame_asset_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\layout-land_activity_splash.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\layout-land\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_info_button.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\info_button.xml"
+    },
+    {
+        "merged": "com.management.capstone.app-merged_res-30:/layout_dialog_layout.xml.flat",
+        "source": "com.management.capstone.app-main-32:/layout/dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\layout-land_activity_classifier.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\layout-land\\activity_classifier.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_background.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\background.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_anim_brush.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\anim_brush.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_gray_button.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\gray_button.xml"
+    },
+    {
+        "merged": "com.management.capstone.app-merged_res-30:/layout-land_dialog_layout.xml.flat",
+        "source": "com.management.capstone.app-main-32:/layout-land/dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\layout_activity_generator.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\layout\\activity_generator.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_main_button.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\main_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_category_design.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\category_design.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\drawable_button_design.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\drawable\\button_design.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-merged_res-30:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\xml\\backup_rules.xml"
+    }
+]

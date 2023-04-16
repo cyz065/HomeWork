@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-mergeDebugResources-29:\\layout\\activity_classifier.xml",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\layout\\activity_classifier.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-mergeDebugResources-29:\\layout\\activity_generator.xml",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\layout\\activity_generator.xml"
+    },
+    {
+        "merged": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-mergeDebugResources-29:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\cyz06\\.gradle\\daemon\\7.3.3\\com.management.capstone.app-main-32:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "com.management.capstone.app-mergeDebugResources-29:/layout/dialog_layout.xml",
+        "source": "com.management.capstone.app-main-32:/layout/dialog_layout.xml"
+    }
+]

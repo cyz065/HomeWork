@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.management.capstone.app-mergeDebugResources-28:/values-v29/values-v29.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\cyz06\\.gradle\\caches\\transforms-3\\91662a31ca15bc103fb28ae4afd90beb\\transformed\\core-splashscreen-1.0.0-alpha02\\res\\values-v29\\values-v29.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "271"
+                    }
+                }
+            ]
+        }
+    ]
+}
