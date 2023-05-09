@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="score_array">
+        <item>당신의 점수는 </item>
+        <item>점 입니다!</item>
+    </string-array>
+    <color name="background">#9FF8D8</color>
     <color name="black">#FF000000</color>
     <color name="blue4">#42A5F5</color>
     <color name="blue5">#2196F3</color>
@@ -27,8 +32,9 @@
     <color name="yellow5">#FFEB3B</color>
     <color name="yellow6">#FDD835</color>
     <string name="app_name">CapStone</string>
+    <string name="score">당신의 점수는 0000점입니다!</string>
     <style name="Theme.App.Starting" parent="Theme.SplashScreen.IconBackground">
-        <item name="windowSplashScreenBackground">@color/yellow6</item>
+        <item name="windowSplashScreenBackground">@color/background</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/anim_brush</item>
         <item name="windowSplashScreenIconBackgroundColor">@color/white</item>
         <item name="windowSplashScreenAnimationDuration">1000</item>
@@ -46,6 +52,20 @@
         
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
         
+    </style>
+    <style name="table">
+        <item name="fontFamily">@font/share_tech</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="textInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="counterTextAppearance">@font/nanum_square</item>
+        <item name="hintTextColor">@color/black</item>
     </style>
     <declare-styleable name="CustomTextOutLineView">
         <attr format="boolean" name="textStroke"/>

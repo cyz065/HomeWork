@@ -4,20 +4,289 @@ package com.management.capstone.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.github.mikephil.charting.charts.HorizontalBarChart;
 import com.management.capstone.R;
-import java.lang.NullPointerException;
 import java.lang.Override;
 
 public final class ActivityGeneratorBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private ActivityGeneratorBinding(@NonNull ConstraintLayout rootView) {
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final HorizontalBarChart chart;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final TextView detail;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ImageView generatorView;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final RadioButton item1;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final RadioButton item2;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final RadioButton item3;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final RadioButton item4;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final RadioButton item5;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final RadioGroup itemGroup;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final LinearLayout linearLayout;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ProgressBar loading;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final LinearLayout mainView;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button nextStage;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final TextView score;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final TextView timer;
+
+  private ActivityGeneratorBinding(@NonNull ConstraintLayout rootView,
+      @Nullable HorizontalBarChart chart, @Nullable TextView detail,
+      @Nullable ImageView generatorView, @Nullable RadioButton item1, @Nullable RadioButton item2,
+      @Nullable RadioButton item3, @Nullable RadioButton item4, @Nullable RadioButton item5,
+      @Nullable RadioGroup itemGroup, @Nullable LinearLayout linearLayout,
+      @Nullable ProgressBar loading, @Nullable LinearLayout mainView, @Nullable Button nextStage,
+      @Nullable TextView score, @Nullable TextView timer) {
     this.rootView = rootView;
+    this.chart = chart;
+    this.detail = detail;
+    this.generatorView = generatorView;
+    this.item1 = item1;
+    this.item2 = item2;
+    this.item3 = item3;
+    this.item4 = item4;
+    this.item5 = item5;
+    this.itemGroup = itemGroup;
+    this.linearLayout = linearLayout;
+    this.loading = loading;
+    this.mainView = mainView;
+    this.nextStage = nextStage;
+    this.score = score;
+    this.timer = timer;
   }
 
   @Override
@@ -43,10 +312,38 @@ public final class ActivityGeneratorBinding implements ViewBinding {
 
   @NonNull
   public static ActivityGeneratorBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    HorizontalBarChart chart = ViewBindings.findChildViewById(rootView, R.id.chart);
 
-    return new ActivityGeneratorBinding((ConstraintLayout) rootView);
+    TextView detail = ViewBindings.findChildViewById(rootView, R.id.detail);
+
+    ImageView generatorView = ViewBindings.findChildViewById(rootView, R.id.generatorView);
+
+    RadioButton item1 = ViewBindings.findChildViewById(rootView, R.id.item1);
+
+    RadioButton item2 = ViewBindings.findChildViewById(rootView, R.id.item2);
+
+    RadioButton item3 = ViewBindings.findChildViewById(rootView, R.id.item3);
+
+    RadioButton item4 = ViewBindings.findChildViewById(rootView, R.id.item4);
+
+    RadioButton item5 = ViewBindings.findChildViewById(rootView, R.id.item5);
+
+    RadioGroup itemGroup = ViewBindings.findChildViewById(rootView, R.id.itemGroup);
+
+    LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, R.id.linearLayout);
+
+    ProgressBar loading = ViewBindings.findChildViewById(rootView, R.id.loading);
+
+    LinearLayout mainView = ViewBindings.findChildViewById(rootView, R.id.mainView);
+
+    Button nextStage = ViewBindings.findChildViewById(rootView, R.id.nextStage);
+
+    TextView score = ViewBindings.findChildViewById(rootView, R.id.score);
+
+    TextView timer = ViewBindings.findChildViewById(rootView, R.id.timer);
+
+    return new ActivityGeneratorBinding((ConstraintLayout) rootView, chart, detail, generatorView,
+        item1, item2, item3, item4, item5, itemGroup, linearLayout, loading, mainView, nextStage,
+        score, timer);
   }
 }

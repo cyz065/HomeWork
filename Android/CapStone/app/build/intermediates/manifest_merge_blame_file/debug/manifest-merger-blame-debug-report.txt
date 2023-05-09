@@ -11,14 +11,14 @@
 9-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-11-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:5:5-81
-11-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:5:22-78
+11-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:6:5-81
+11-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:6:22-78
 12    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-12-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:6:5-75
-12-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:6:22-73
+12-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:7:5-76
+12-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:7:22-73
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:7:5-66
-13-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:7:22-64
+13-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:8:5-67
+13-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:8:22-64
 14
 15    <permission
 15-->[androidx.core:core:1.9.0] C:\Users\cyz06\.gradle\caches\transforms-3\cdf33cb1bb3c2932b0f0f9b3da3ce3d6\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
@@ -32,7 +32,7 @@
 19-->[androidx.core:core:1.9.0] C:\Users\cyz06\.gradle\caches\transforms-3\cdf33cb1bb3c2932b0f0f9b3da3ce3d6\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 20
 21    <application
-21-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:9:5-41:19
+21-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:10:5-49:19
 22        android:allowBackup="true"
 22-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:11:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -43,81 +43,95 @@
 26        android:extractNativeLibs="false"
 27        android:fullBackupContent="@xml/backup_rules"
 27-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:13:9-54
-28        android:icon="@mipmap/ic_launcher"
+28        android:hardwareAccelerated="true"
 28-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:14:9-43
-29        android:label="@string/app_name"
-29-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:15:9-41
-30        android:roundIcon="@mipmap/ic_launcher_round"
-30-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:16:9-54
-31        android:screenOrientation="landscape"
-31-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:17:9-46
-32        android:supportsRtl="true"
-32-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:18:9-35
-33        android:testOnly="true"
-34        android:theme="@style/Theme.CapStone"
-34-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:19:9-46
-35        android:usesCleartextTraffic="true" >
-35-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:10:9-44
-36        <activity
-36-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:21:9-23:40
-37            android:name="com.management.capstone.GeneratorActivity"
-37-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:22:13-46
-38            android:exported="false" />
-38-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:23:13-37
-39        <activity
-39-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:24:9-30:20
-40            android:name="com.management.capstone.ClassifierActivity"
-40-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:25:13-47
-41            android:exported="true" >
-41-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:26:13-36
-42            <intent-filter>
-42-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:27:13-29:29
-43                <action android:name="android.intent.action.MAIN" />
-43-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:28:17-69
-43-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:28:25-66
-44            </intent-filter>
-45        </activity>
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:15:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:16:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:17:9-54
+32        android:screenOrientation="landscape"
+32-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:18:9-46
+33        android:supportsRtl="true"
+33-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:19:9-35
+34        android:testOnly="true"
+35        android:theme="@style/Theme.CapStone"
+35-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:20:9-46
+36        android:usesCleartextTraffic="true" >
+36-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:21:9-44
+37        <activity
+37-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:23:9-25:40
+38            android:name="com.management.capstone.ScoreActivity"
+38-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:24:13-42
+39            android:exported="false" />
+39-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:25:13-37
+40        <activity
+40-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:26:9-28:40
+41            android:name="com.management.capstone.RankingActivity"
+41-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:27:13-44
+42            android:exported="false" />
+42-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:28:13-37
+43        <activity
+43-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:29:9-31:40
+44            android:name="com.management.capstone.GeneratorActivity"
+44-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:30:13-46
+45            android:exported="false" />
+45-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:31:13-37
 46        <activity
-46-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:31:9-40:20
-47            android:name="com.management.capstone.SplashActivity"
-47-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:32:13-43
-48            android:exported="true"
-48-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:33:13-36
-49            android:theme="@style/Theme.App.Starting" >
-49-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:34:13-54
-50            <intent-filter>
-50-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:35:13-39:29
-51                <action android:name="android.intent.action.MAIN" />
-51-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:28:17-69
-51-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:28:25-66
-52
-53                <category android:name="android.intent.category.LAUNCHER" />
-53-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:38:17-77
-53-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:38:27-74
-54            </intent-filter>
-55        </activity>
-56
-57        <provider
-57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-58            android:name="androidx.startup.InitializationProvider"
-58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-59            android:authorities="com.management.capstone.androidx-startup"
-59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-60            android:exported="false" >
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-61            <meta-data
-61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-63                android:value="androidx.startup" />
-63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-64            <meta-data
-64-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\cyz06\.gradle\caches\transforms-3\35943563f449e64621f791c783419b38\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-65-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\cyz06\.gradle\caches\transforms-3\35943563f449e64621f791c783419b38\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-66                android:value="androidx.startup" />
-66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\cyz06\.gradle\caches\transforms-3\35943563f449e64621f791c783419b38\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-67        </provider>
-68    </application>
-69
-70</manifest>
+46-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:32:9-38:20
+47            android:name="com.management.capstone.ClassifierActivity"
+47-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:33:13-47
+48            android:exported="true" >
+48-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:34:13-36
+49            <intent-filter>
+49-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:35:13-37:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:36:17-69
+50-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:36:25-66
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:39:9-48:20
+54            android:name="com.management.capstone.SplashActivity"
+54-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:40:13-43
+55            android:exported="true"
+55-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:41:13-36
+56            android:theme="@style/Theme.App.Starting" >
+56-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:42:13-54
+57            <intent-filter>
+57-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:43:13-47:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:36:17-69
+58-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:36:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:46:17-77
+60-->C:\Users\cyz06\CapStone\app\src\main\AndroidManifest.xml:46:27-74
+61            </intent-filter>
+62        </activity>
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+66            android:authorities="com.management.capstone.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cyz06\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\cyz06\.gradle\caches\transforms-3\35943563f449e64621f791c783419b38\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\cyz06\.gradle\caches\transforms-3\35943563f449e64621f791c783419b38\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\cyz06\.gradle\caches\transforms-3\35943563f449e64621f791c783419b38\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+74        </provider>
+75    </application>
+76
+77</manifest>

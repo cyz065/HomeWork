@@ -74,6 +74,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array score_array
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -1309,6 +1310,7 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color background
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -2749,8 +2751,10 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_design
+drawable button_selected
 drawable category_design
-drawable circular_progress_bar
+drawable category_select
+drawable circle_progressbar
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
 drawable design_fab_background
@@ -2761,12 +2765,10 @@ drawable design_snackbar_background
 drawable font_border
 drawable gray_button
 drawable ic_arrow_back_black_24
-drawable ic_baseline_videogame_asset_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
-drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -2855,6 +2857,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font metropolis
 font nanum_square
+font share_tech
 font title_text
 id ALT
 id BOTTOM_END
@@ -2967,6 +2970,8 @@ id center_vertical
 id chain
 id chain2
 id chains
+id chart
+id check
 id checkbox
 id checked
 id chronometer
@@ -3005,6 +3010,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detail
 id dialog_button
 id dimensions
 id direct
@@ -3055,6 +3061,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id generatorView
 id ghost_view
 id ghost_view_holder
 id gone
@@ -3088,6 +3095,7 @@ id item2
 id item3
 id item4
 id item5
+id itemGroup
 id itemLayout
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -3101,10 +3109,13 @@ id line1
 id line3
 id linear
 id linearLayout
+id linearLayout2
 id linearLayoutCompat2
 id listMode
 id list_item
+id loading
 id m3_side_sheet
+id mainButton
 id mainView
 id marquee
 id masked
@@ -3165,6 +3176,8 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
+id nameContainer
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3205,10 +3218,10 @@ id pin
 id position
 id postLayout
 id pressed
-id progressCountdown
 id progress_circular
 id progress_horizontal
 id radio
+id rankBtn
 id ratio
 id rectangles
 id resultView
@@ -3223,6 +3236,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id score
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3298,6 +3312,8 @@ id submit
 id submit_area
 id supportScrollUp
 id tabMode
+id tableLayout
+id tableLayout2
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3318,6 +3334,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3332,6 +3349,7 @@ id timer
 id title
 id titleDividerNoCustom
 id title_template
+id toMain
 id toggle
 id top
 id topPanel
@@ -3477,6 +3495,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_classifier
 layout activity_generator
+layout activity_ranking
+layout activity_score
 layout activity_splash
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3558,6 +3578,7 @@ layout select_dialog_singlechoice_material
 layout splash_screen_view
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
@@ -3708,6 +3729,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string score
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -4813,6 +4835,8 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style table
+style textInput
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

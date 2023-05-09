@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -101,7 +100,7 @@ public final class ActivityClassifierBinding implements ViewBinding {
    * </ul>
    */
   @Nullable
-  public final TextView item4;
+  public final AppCompatTextView item4;
 
   /**
    * This binding is not available in all configurations.
@@ -117,7 +116,7 @@ public final class ActivityClassifierBinding implements ViewBinding {
    * </ul>
    */
   @Nullable
-  public final TextView item5;
+  public final AppCompatTextView item5;
 
   /**
    * This binding is not available in all configurations.
@@ -197,7 +196,7 @@ public final class ActivityClassifierBinding implements ViewBinding {
    * </ul>
    */
   @Nullable
-  public final ProgressBar progressCountdown;
+  public final TextView resultView;
 
   /**
    * This binding is not available in all configurations.
@@ -213,7 +212,7 @@ public final class ActivityClassifierBinding implements ViewBinding {
    * </ul>
    */
   @Nullable
-  public final TextView resultView;
+  public final TextView score;
 
   /**
    * This binding is not available in all configurations.
@@ -266,10 +265,10 @@ public final class ActivityClassifierBinding implements ViewBinding {
   private ActivityClassifierBinding(@NonNull ConstraintLayout rootView,
       @Nullable DrawView drawingView, @Nullable AppCompatTextView item1,
       @Nullable AppCompatTextView item2, @Nullable AppCompatTextView item3,
-      @Nullable TextView item4, @Nullable TextView item5, @Nullable LinearLayoutCompat itemLayout,
-      @Nullable LinearLayout linearLayout, @Nullable LinearLayout mainView,
-      @Nullable Button nextStage, @Nullable ProgressBar progressCountdown,
-      @Nullable TextView resultView, @Nullable Button submit, @Nullable TextView timer,
+      @Nullable AppCompatTextView item4, @Nullable AppCompatTextView item5,
+      @Nullable LinearLayoutCompat itemLayout, @Nullable LinearLayout linearLayout,
+      @Nullable LinearLayout mainView, @Nullable Button nextStage, @Nullable TextView resultView,
+      @Nullable TextView score, @Nullable Button submit, @Nullable TextView timer,
       @Nullable Button unDo) {
     this.rootView = rootView;
     this.drawingView = drawingView;
@@ -282,8 +281,8 @@ public final class ActivityClassifierBinding implements ViewBinding {
     this.linearLayout = linearLayout;
     this.mainView = mainView;
     this.nextStage = nextStage;
-    this.progressCountdown = progressCountdown;
     this.resultView = resultView;
+    this.score = score;
     this.submit = submit;
     this.timer = timer;
     this.unDo = unDo;
@@ -320,9 +319,9 @@ public final class ActivityClassifierBinding implements ViewBinding {
 
     AppCompatTextView item3 = ViewBindings.findChildViewById(rootView, R.id.item3);
 
-    TextView item4 = ViewBindings.findChildViewById(rootView, R.id.item4);
+    AppCompatTextView item4 = ViewBindings.findChildViewById(rootView, R.id.item4);
 
-    TextView item5 = ViewBindings.findChildViewById(rootView, R.id.item5);
+    AppCompatTextView item5 = ViewBindings.findChildViewById(rootView, R.id.item5);
 
     LinearLayoutCompat itemLayout = ViewBindings.findChildViewById(rootView, R.id.itemLayout);
 
@@ -332,9 +331,9 @@ public final class ActivityClassifierBinding implements ViewBinding {
 
     Button nextStage = ViewBindings.findChildViewById(rootView, R.id.nextStage);
 
-    ProgressBar progressCountdown = ViewBindings.findChildViewById(rootView, R.id.progressCountdown);
-
     TextView resultView = ViewBindings.findChildViewById(rootView, R.id.resultView);
+
+    TextView score = ViewBindings.findChildViewById(rootView, R.id.score);
 
     Button submit = ViewBindings.findChildViewById(rootView, R.id.submit);
 
@@ -343,7 +342,7 @@ public final class ActivityClassifierBinding implements ViewBinding {
     Button unDo = ViewBindings.findChildViewById(rootView, R.id.unDo);
 
     return new ActivityClassifierBinding((ConstraintLayout) rootView, drawingView, item1, item2,
-        item3, item4, item5, itemLayout, linearLayout, mainView, nextStage, progressCountdown,
-        resultView, submit, timer, unDo);
+        item3, item4, item5, itemLayout, linearLayout, mainView, nextStage, resultView, score,
+        submit, timer, unDo);
   }
 }

@@ -81,6 +81,22 @@ public final class ActivitySplashBinding implements ViewBinding {
    * </ul>
    */
   @Nullable
+  public final AppCompatButton rankBtn;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final AppCompatButton startBtn;
 
   /**
@@ -101,12 +117,13 @@ public final class ActivitySplashBinding implements ViewBinding {
 
   private ActivitySplashBinding(@NonNull ConstraintLayout rootView,
       @Nullable AppCompatButton exitBtn, @Nullable AppCompatButton infoBtn,
-      @Nullable LinearLayoutCompat linearLayoutCompat2, @Nullable AppCompatButton startBtn,
-      @Nullable CustomTextOutLineView title) {
+      @Nullable LinearLayoutCompat linearLayoutCompat2, @Nullable AppCompatButton rankBtn,
+      @Nullable AppCompatButton startBtn, @Nullable CustomTextOutLineView title) {
     this.rootView = rootView;
     this.exitBtn = exitBtn;
     this.infoBtn = infoBtn;
     this.linearLayoutCompat2 = linearLayoutCompat2;
+    this.rankBtn = rankBtn;
     this.startBtn = startBtn;
     this.title = title;
   }
@@ -140,11 +157,13 @@ public final class ActivitySplashBinding implements ViewBinding {
 
     LinearLayoutCompat linearLayoutCompat2 = ViewBindings.findChildViewById(rootView, R.id.linearLayoutCompat2);
 
+    AppCompatButton rankBtn = ViewBindings.findChildViewById(rootView, R.id.rankBtn);
+
     AppCompatButton startBtn = ViewBindings.findChildViewById(rootView, R.id.startBtn);
 
     CustomTextOutLineView title = ViewBindings.findChildViewById(rootView, R.id.title);
 
     return new ActivitySplashBinding((ConstraintLayout) rootView, exitBtn, infoBtn,
-        linearLayoutCompat2, startBtn, title);
+        linearLayoutCompat2, rankBtn, startBtn, title);
   }
 }
